@@ -1,0 +1,942 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f989dec6d70, pid=5720, tid=0x00007f9889400700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_181-b13) (build 1.8.0_181-8u181-b13-0ubuntu0.16.04.1-b13)
+# Java VM: OpenJDK 64-Bit Server VM (25.181-b13 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [_jpype.so+0x2fd70]  JPJavaEnv::FindClass(char const*)+0x20
+#
+# Core dump written. Default location: /mnt/c/Users/hs/test/flaskrest/core or core.5720
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00007f9858001d60, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000001
+RSP=0x00007f98893fc2f0, RBP=0x00007f9858001d60, RSI=0x00007f98893fc2d0, RDI=0x0000000002212740
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x00007f984c000078, R11=0x00007f98a67a4f90
+R12=0x0000000002ebc1c0, R13=0x0000000002ebc250, R14=0x0000000002f619d0, R15=0x00007f98893fc32f
+RIP=0x00007f989dec6d70, EFLAGS=0x0000000000010246, CSGSFS=0x00000053002b0033, ERR=0x0000000000000000
+  TRAPNO=0x0000000000000000
+
+Top of Stack: (sp=0x00007f98893fc2f0)
+0x00007f98893fc2f0:   0000000002ebc1c0 000000000000001b
+0x00007f98893fc300:   0000000002ebc050 00007f989dee06dd
+0x00007f98893fc310:   00007f989e10f648 00007f98a6694184
+0x00007f98893fc320:   0000000000000002 0000000000000008
+0x00007f98893fc330:   0000000000000000 00007f989db9de78
+0x00007f98893fc340:   0000000000000000 00007f989ded3345
+0x00007f98893fc350:   0000000000000000 b6dae33e002ae700
+0x00007f98893fc360:   00007f984c005980 8e38e38e38e38e39
+0x00007f98893fc370:   00007f98893fc3a0 0000000002ebc2b8
+0x00007f98893fc380:   0000000002ebc230 0000000000000001
+0x00007f98893fc390:   0000000000000048 00007f989ded1c01
+0x00007f98893fc3a0:   0000000002eb2670 b6dae33e002ae700
+0x00007f98893fc3b0:   0000000000000000 0000000000000000
+0x00007f98893fc3c0:   0000000000000000 0000000000000000
+0x00007f98893fc3d0:   00007f98893fc7a0 0000000002ebc230
+0x00007f98893fc3e0:   00007f98893fc7a0 00007f989ded1c4b
+0x00007f98893fc3f0:   00007f9889c44d80 b6dae33e002ae700
+0x00007f98893fc400:   00007f98893fc4c0 0000000000000000
+0x00007f98893fc410:   0000000002ebc0e0 0000000000000000
+0x00007f98893fc420:   00007f98893fc7a0 00007f984c001730
+0x00007f98893fc430:   00007f98a6f50050 00007f989decd737
+0x00007f98893fc440:   0000000000000000 0000000000000000
+0x00007f98893fc450:   00000000008f66c0 00000000004d54b9
+0x00007f98893fc460:   0000000000000000 0000000000000000
+0x00007f98893fc470:   0000000000000000 0000000000000000
+0x00007f98893fc480:   00007f9889c50948 0000000000520753
+0x00007f98893fc490:   00007f98a6e79bd8 00007f98a094e440
+0x00007f98893fc4a0:   00000000004d5470 00007f989e53c5f0
+0x00007f98893fc4b0:   0000000000000000 00007f989fa45d50
+0x00007f98893fc4c0:   00000000008f66c0 00000000004eebee
+0x00007f98893fc4d0:   0000000000000004 0000000000000001
+0x00007f98893fc4e0:   0000000100000001 0000000000000000 
+
+Instructions: (pc=0x00007f989dec6d70)
+0x00007f989dec6d50:   41 54 55 49 89 f4 53 e8 64 97 ff ff 48 89 c3 e8
+0x00007f989dec6d60:   fc 72 ff ff 48 8b 10 48 89 c7 ff 52 30 48 89 c5
+0x00007f989dec6d70:   48 8b 03 48 89 df 4c 89 e6 ff 50 30 48 89 c3 e8
+0x00007f989dec6d80:   dc 72 ff ff 48 8b 10 48 89 ee 48 89 c7 ff 52 38 
+
+Register to memory mapping:
+
+RAX=0x00007f9858001d60 is an unknown value
+RBX=0x0000000000000000 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000000000000001 is an unknown value
+RSP=0x00007f98893fc2f0 is an unknown value
+RBP=0x00007f9858001d60 is an unknown value
+RSI=0x00007f98893fc2d0 is an unknown value
+RDI=0x0000000002212740 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x00007f984c000078 is an unknown value
+R11=0x00007f98a67a4f90: <offset 0x194f90> in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007f98a6610000
+R12=0x0000000002ebc1c0 is an unknown value
+R13=0x0000000002ebc250 is an unknown value
+R14=0x0000000002f619d0 is an unknown value
+R15=0x00007f98893fc32f is an unknown value
+
+
+Stack: [0x00007f9888c00000,0x00007f9889401000],  sp=0x00007f98893fc2f0,  free space=8176k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [_jpype.so+0x2fd70]  JPJavaEnv::FindClass(char const*)+0x20
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 36352K, used 31390K [0x00000000d5b00000, 0x00000000d8d80000, 0x0000000100000000)
+  eden space 35328K, 85% used [0x00000000d5b00000,0x00000000d78a7b00,0x00000000d7d80000)
+  from space 1024K, 100% used [0x00000000d7d80000,0x00000000d7e80000,0x00000000d7e80000)
+  to   space 1536K, 0% used [0x00000000d8c00000,0x00000000d8c00000,0x00000000d8d80000)
+ ParOldGen       total 87552K, used 924K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 1% used [0x0000000081000000,0x00000000810e7060,0x0000000086580000)
+ Metaspace       used 3996K, capacity 4862K, committed 5120K, reserved 1056768K
+  class space    used 408K, capacity 425K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x00007f988c320000,0x00007f988c719000] byte_map_base: 0x00007f988bf18000
+
+Marking Bits: (ParMarkBitMap*) 0x00007f989d8cd3a0
+ Begin Bits: [0x00007f9880080000, 0x00007f9882040000)
+ End Bits:   [0x00007f9882040000, 0x00007f9884000000)
+
+Polling page: 0x00007f98a6e30000
+
+CodeCache: size=245760Kb used=2737Kb max_used=2742Kb free=243022Kb
+ bounds [0x00007f988cae0000, 0x00007f988cda0000, 0x00007f989bae0000]
+ total_blobs=850 nmethods=594 adapters=172
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2.628 Thread 0x0000000002dc3800  590       4       java.math.BigInteger::compareTo (71 bytes)
+Event: 2.629 Thread 0x0000000002dc3800 nmethod 590 0x00007f988cd910d0 code [0x00007f988cd91220, 0x00007f988cd913a8]
+Event: 2.631 Thread 0x0000000002dc8000  591       3       it.unisa.dia.gas.plaf.jpbc.field.z.ZrElement::isEqual (28 bytes)
+Event: 2.631 Thread 0x0000000002dc8000 nmethod 591 0x00007f988cd8a510 code [0x00007f988cd8a6a0, 0x00007f988cd8a9c8]
+Event: 2.649 Thread 0x0000000002dc8000  592       3       it.unisa.dia.gas.plaf.jpbc.field.curve.CurveElement::<init> (51 bytes)
+Event: 2.650 Thread 0x0000000002dc8000 nmethod 592 0x00007f988cd89a90 code [0x00007f988cd89c40, 0x00007f988cd8a298]
+Event: 2.650 Thread 0x0000000002dc8000  593       3       it.unisa.dia.gas.plaf.jpbc.field.curve.CurveElement::duplicate (5 bytes)
+Event: 2.650 Thread 0x0000000002dc8000 nmethod 593 0x00007f988cd89550 code [0x00007f988cd896c0, 0x00007f988cd89988]
+Event: 2.650 Thread 0x0000000002dc8000  594       3       it.unisa.dia.gas.plaf.jpbc.field.curve.CurveElement::duplicate (9 bytes)
+Event: 2.650 Thread 0x0000000002dc8000 nmethod 594 0x00007f988cd89150 code [0x00007f988cd892c0, 0x00007f988cd894a8]
+
+GC Heap History (10 events):
+Event: 1.968 GC heap before
+{Heap before GC invocations=7 (full 0):
+ PSYoungGen      total 33280K, used 32896K [0x00000000d5b00000, 0x00000000d8100000, 0x0000000100000000)
+  eden space 32256K, 100% used [0x00000000d5b00000,0x00000000d7a80000,0x00000000d7a80000)
+  from space 1024K, 62% used [0x00000000d8000000,0x00000000d80a0000,0x00000000d8100000)
+  to   space 1024K, 0% used [0x00000000d7f00000,0x00000000d7f00000,0x00000000d8000000)
+ ParOldGen       total 87552K, used 0K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x0000000081000000,0x0000000086580000)
+ Metaspace       used 3799K, capacity 4670K, committed 4864K, reserved 1056768K
+  class space    used 391K, capacity 425K, committed 512K, reserved 1048576K
+Event: 1.970 GC heap after
+Heap after GC invocations=7 (full 0):
+ PSYoungGen      total 32256K, used 32K [0x00000000d5b00000, 0x00000000d8080000, 0x0000000100000000)
+  eden space 31744K, 0% used [0x00000000d5b00000,0x00000000d5b00000,0x00000000d7a00000)
+  from space 512K, 6% used [0x00000000d7f00000,0x00000000d7f08000,0x00000000d7f80000)
+  to   space 1024K, 0% used [0x00000000d7f80000,0x00000000d7f80000,0x00000000d8080000)
+ ParOldGen       total 87552K, used 620K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109b060,0x0000000086580000)
+ Metaspace       used 3799K, capacity 4670K, committed 4864K, reserved 1056768K
+  class space    used 391K, capacity 425K, committed 512K, reserved 1048576K
+}
+Event: 2.107 GC heap before
+{Heap before GC invocations=8 (full 0):
+ PSYoungGen      total 32256K, used 31776K [0x00000000d5b00000, 0x00000000d8080000, 0x0000000100000000)
+  eden space 31744K, 100% used [0x00000000d5b00000,0x00000000d7a00000,0x00000000d7a00000)
+  from space 512K, 6% used [0x00000000d7f00000,0x00000000d7f08000,0x00000000d7f80000)
+  to   space 1024K, 0% used [0x00000000d7f80000,0x00000000d7f80000,0x00000000d8080000)
+ ParOldGen       total 87552K, used 620K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109b060,0x0000000086580000)
+ Metaspace       used 3891K, capacity 4734K, committed 4864K, reserved 1056768K
+  class space    used 399K, capacity 425K, committed 512K, reserved 1048576K
+Event: 2.108 GC heap after
+Heap after GC invocations=8 (full 0):
+ PSYoungGen      total 31744K, used 96K [0x00000000d5b00000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 31232K, 0% used [0x00000000d5b00000,0x00000000d5b00000,0x00000000d7980000)
+  from space 512K, 18% used [0x00000000d7f80000,0x00000000d7f98000,0x00000000d8000000)
+  to   space 1024K, 0% used [0x00000000d7e00000,0x00000000d7e00000,0x00000000d7f00000)
+ ParOldGen       total 87552K, used 628K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109d060,0x0000000086580000)
+ Metaspace       used 3891K, capacity 4734K, committed 4864K, reserved 1056768K
+  class space    used 399K, capacity 425K, committed 512K, reserved 1048576K
+}
+Event: 2.411 GC heap before
+{Heap before GC invocations=9 (full 0):
+ PSYoungGen      total 31744K, used 31328K [0x00000000d5b00000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 31232K, 100% used [0x00000000d5b00000,0x00000000d7980000,0x00000000d7980000)
+  from space 512K, 18% used [0x00000000d7f80000,0x00000000d7f98000,0x00000000d8000000)
+  to   space 1024K, 0% used [0x00000000d7e00000,0x00000000d7e00000,0x00000000d7f00000)
+ ParOldGen       total 87552K, used 628K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109d060,0x0000000086580000)
+ Metaspace       used 3910K, capacity 4798K, committed 5120K, reserved 1056768K
+  class space    used 399K, capacity 425K, committed 512K, reserved 1048576K
+Event: 2.411 GC heap after
+Heap after GC invocations=9 (full 0):
+ PSYoungGen      total 31744K, used 64K [0x00000000d5b00000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 30720K, 0% used [0x00000000d5b00000,0x00000000d5b00000,0x00000000d7900000)
+  from space 1024K, 6% used [0x00000000d7e00000,0x00000000d7e10000,0x00000000d7f00000)
+  to   space 1024K, 0% used [0x00000000d7f00000,0x00000000d7f00000,0x00000000d8000000)
+ ParOldGen       total 87552K, used 636K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109f060,0x0000000086580000)
+ Metaspace       used 3910K, capacity 4798K, committed 5120K, reserved 1056768K
+  class space    used 399K, capacity 425K, committed 512K, reserved 1048576K
+}
+Event: 2.553 GC heap before
+{Heap before GC invocations=10 (full 0):
+ PSYoungGen      total 31744K, used 30784K [0x00000000d5b00000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 30720K, 100% used [0x00000000d5b00000,0x00000000d7900000,0x00000000d7900000)
+  from space 1024K, 6% used [0x00000000d7e00000,0x00000000d7e10000,0x00000000d7f00000)
+  to   space 1024K, 0% used [0x00000000d7f00000,0x00000000d7f00000,0x00000000d8000000)
+ ParOldGen       total 87552K, used 636K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x000000008109f060,0x0000000086580000)
+ Metaspace       used 3978K, capacity 4798K, committed 5120K, reserved 1056768K
+  class space    used 407K, capacity 425K, committed 512K, reserved 1048576K
+Event: 2.554 GC heap after
+Heap after GC invocations=10 (full 0):
+ PSYoungGen      total 30720K, used 96K [0x00000000d5b00000, 0x00000000d7f80000, 0x0000000100000000)
+  eden space 30208K, 0% used [0x00000000d5b00000,0x00000000d5b00000,0x00000000d7880000)
+  from space 512K, 18% used [0x00000000d7f00000,0x00000000d7f18000,0x00000000d7f80000)
+  to   space 1024K, 0% used [0x00000000d7d80000,0x00000000d7d80000,0x00000000d7e80000)
+ ParOldGen       total 87552K, used 652K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x00000000810a3060,0x0000000086580000)
+ Metaspace       used 3978K, capacity 4798K, committed 5120K, reserved 1056768K
+  class space    used 407K, capacity 425K, committed 512K, reserved 1048576K
+}
+Event: 2.690 GC heap before
+{Heap before GC invocations=11 (full 0):
+ PSYoungGen      total 30720K, used 30304K [0x00000000d5b00000, 0x00000000d7f80000, 0x0000000100000000)
+  eden space 30208K, 100% used [0x00000000d5b00000,0x00000000d7880000,0x00000000d7880000)
+  from space 512K, 18% used [0x00000000d7f00000,0x00000000d7f18000,0x00000000d7f80000)
+  to   space 1024K, 0% used [0x00000000d7d80000,0x00000000d7d80000,0x00000000d7e80000)
+ ParOldGen       total 87552K, used 652K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 0% used [0x0000000081000000,0x00000000810a3060,0x0000000086580000)
+ Metaspace       used 3996K, capacity 4862K, committed 5120K, reserved 1056768K
+  class space    used 408K, capacity 425K, committed 512K, reserved 1048576K
+Event: 2.693 GC heap after
+Heap after GC invocations=11 (full 0):
+ PSYoungGen      total 36352K, used 1024K [0x00000000d5b00000, 0x00000000d8d80000, 0x0000000100000000)
+  eden space 35328K, 0% used [0x00000000d5b00000,0x00000000d5b00000,0x00000000d7d80000)
+  from space 1024K, 100% used [0x00000000d7d80000,0x00000000d7e80000,0x00000000d7e80000)
+  to   space 1536K, 0% used [0x00000000d8c00000,0x00000000d8c00000,0x00000000d8d80000)
+ ParOldGen       total 87552K, used 924K [0x0000000081000000, 0x0000000086580000, 0x00000000d5b00000)
+  object space 87552K, 1% used [0x0000000081000000,0x00000000810e7060,0x0000000086580000)
+ Metaspace       used 3996K, capacity 4862K, committed 5120K, reserved 1056768K
+  class space    used 408K, capacity 425K, committed 512K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 2.059 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988ccaccec method=java.math.MutableBigInteger.divideKnuth(Ljava/math/MutableBigInteger;Ljava/math/MutableBigInteger;Z)Ljava/math/MutableBigInteger; @ 190
+Event: 2.064 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988ccfd10c method=java.math.BigInteger.subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger; @ 29
+Event: 2.065 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cc4f9a4 method=java.math.MutableBigInteger.getLowestSetBit()I @ 17
+Event: 2.068 Thread 0x0000000002cc0800 Uncommon trap: reason=predicate action=maybe_recompile pc=0x00007f988ccd5d00 method=java.util.Random.nextBytes([B)V @ 10
+Event: 2.068 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cc94a38 method=java.math.BigInteger.compareTo(Ljava/math/BigInteger;)I @ 8
+Event: 2.089 Thread 0x0000000002cc0800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f988ccd48a0 method=java.util.Random.nextBytes([B)V @ 11
+Event: 2.095 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cca3054 method=java.math.BigInteger.modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger; @ 21
+Event: 2.149 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cd49a94 method=java.math.MutableBigInteger.mul(ILjava/math/MutableBigInteger;)V @ 2
+Event: 2.495 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cd75af8 method=java.math.BigInteger.subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger; @ 4
+Event: 2.535 Thread 0x0000000002cc0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f988cd7cf78 method=java.math.BigInteger.subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger; @ 13
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (9 events):
+Event: 0.059 Thread 0x0000000002cc0800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d5b07cb0) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/
+Event: 0.059 Thread 0x0000000002cc0800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d5b07f98) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jni.cpp, lin
+Event: 0.605 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cf8228) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.605 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cf8438) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.606 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cf9600) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.606 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cf9810) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.606 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cfaa08) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.606 Thread 0x0000000002cc0800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d5cfac18) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1435]
+Event: 0.606 Thread 0x0000000002cc0800 Exception <a 'java/lang/NoClassDefFoundError': Ljava/lang;> (0x00000000d5cfb078) thrown at [/build/openjdk-8-pREaNj/openjdk-8-8u181-b13/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 199]
+
+Events (10 events):
+Event: 2.535 Thread 0x0000000002cc0800 DEOPT PACKING pc=0x00007f988cd7cf78 sp=0x00007fffe4040a40
+Event: 2.535 Thread 0x0000000002cc0800 DEOPT UNPACKING pc=0x00007f988cb2547a sp=0x00007fffe4040970 mode 2
+Event: 2.553 Executing VM operation: ParallelGCFailedAllocation
+Event: 2.554 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2.557 loading class it/unisa/dia/gas/plaf/jpbc/field/base/AbstractElementPowPreProcessing
+Event: 2.557 loading class it/unisa/dia/gas/plaf/jpbc/field/base/AbstractElementPowPreProcessing done
+Event: 2.690 Executing VM operation: ParallelGCFailedAllocation
+Event: 2.693 Executing VM operation: ParallelGCFailedAllocation done
+Event: 4.140 Executing VM operation: EnableBiasedLocking
+Event: 4.140 Executing VM operation: EnableBiasedLocking done
+
+
+Dynamic libraries:
+00400000-006dd000 r-xp 00000000 00:00 213209                     /mnt/c/Users/hs/test/flaskrest/bin/python
+006dd000-006de000 r-xp 002dd000 00:00 213209                     /mnt/c/Users/hs/test/flaskrest/bin/python
+008dd000-008de000 r--p 002dd000 00:00 213209                     /mnt/c/Users/hs/test/flaskrest/bin/python
+008de000-00955000 rw-p 002de000 00:00 213209                     /mnt/c/Users/hs/test/flaskrest/bin/python
+00955000-00978000 rw-p 00000000 00:00 0
+02188000-03091000 rw-p 00000000 00:00 0                          [heap]
+81000000-86580000 rw-p 00000000 00:00 0
+86580000-d5b00000 ---p 00000000 00:00 0
+d5b00000-d8d80000 rw-p 00000000 00:00 0
+d8d80000-100000000 ---p 00000000 00:00 0
+100000000-100080000 rw-p 00000000 00:00 0
+100080000-140000000 ---p 00000000 00:00 0
+7f984c000000-7f984c021000 rw-p 00000000 00:00 0
+7f984c021000-7f9850000000 ---p 00000000 00:00 0
+7f9854000000-7f9854021000 rw-p 00000000 00:00 0
+7f9854021000-7f9858000000 ---p 00000000 00:00 0
+7f9858000000-7f9858021000 rw-p 00000000 00:00 0
+7f9858021000-7f985c000000 ---p 00000000 00:00 0
+7f985c000000-7f985c021000 rw-p 00000000 00:00 0
+7f985c021000-7f9860000000 ---p 00000000 00:00 0
+7f9860000000-7f9860021000 rw-p 00000000 00:00 0
+7f9860021000-7f9864000000 ---p 00000000 00:00 0
+7f9864000000-7f98645d8000 rw-p 00000000 00:00 0
+7f98645d8000-7f9868000000 ---p 00000000 00:00 0
+7f9868000000-7f9868269000 rw-p 00000000 00:00 0
+7f9868269000-7f986c000000 ---p 00000000 00:00 0
+7f986c000000-7f986c021000 rw-p 00000000 00:00 0
+7f986c021000-7f9870000000 ---p 00000000 00:00 0
+7f9870000000-7f98705c0000 rw-p 00000000 00:00 0
+7f98705c0000-7f9874000000 ---p 00000000 00:00 0
+7f9874000000-7f9874021000 rw-p 00000000 00:00 0
+7f9874021000-7f9878000000 ---p 00000000 00:00 0
+7f9878000000-7f9878021000 rw-p 00000000 00:00 0
+7f9878021000-7f987c000000 ---p 00000000 00:00 0
+7f987c000000-7f987c021000 rw-p 00000000 00:00 0
+7f987c021000-7f9880000000 ---p 00000000 00:00 0
+7f9880080000-7f9884021000 rw-p 00000000 00:00 0
+7f9884021000-7f9888000000 ---p 00000000 00:00 0
+7f9888c00000-7f9888c01000 ---p 00000000 00:00 0
+7f9888c01000-7f9889401000 rw-p 00000000 00:00 0
+7f9889410000-7f9889411000 ---p 00000000 00:00 0
+7f9889411000-7f9889c11000 rw-p 00000000 00:00 0
+7f9889c20000-7f9889c60000 rw-p 00000000 00:00 0
+7f9889c60000-7f9889c64000 r-xp 00000000 00:00 72222              /usr/lib/python2.7/lib-dynload/termios.x86_64-linux-gnu.so
+7f9889c64000-7f9889c67000 ---p 00004000 00:00 72222              /usr/lib/python2.7/lib-dynload/termios.x86_64-linux-gnu.so
+7f9889c67000-7f9889e63000 ---p 00000007 00:00 72222              /usr/lib/python2.7/lib-dynload/termios.x86_64-linux-gnu.so
+7f9889e63000-7f9889e64000 r--p 00003000 00:00 72222              /usr/lib/python2.7/lib-dynload/termios.x86_64-linux-gnu.so
+7f9889e64000-7f9889e66000 rw-p 00004000 00:00 72222              /usr/lib/python2.7/lib-dynload/termios.x86_64-linux-gnu.so
+7f9889e70000-7f9889eb0000 rw-p 00000000 00:00 0
+7f9889eba000-7f9889ed5000 r--s 001d6000 00:00 219995             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar
+7f9889ed5000-7f9889ef0000 r--s 00394000 00:00 219996             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar
+7f9889ef0000-7f9889ef3000 ---p 00000000 00:00 0
+7f9889ef3000-7f9889ff1000 rw-p 00000000 00:00 0
+7f988a000000-7f988a040000 rw-p 00000000 00:00 0
+7f988a040000-7f988a041000 ---p 00000000 00:00 0
+7f988a041000-7f988a141000 rw-p 00000000 00:00 0
+7f988a150000-7f988a153000 ---p 00000000 00:00 0
+7f988a153000-7f988a251000 rw-p 00000000 00:00 0
+7f988a260000-7f988a263000 ---p 00000000 00:00 0
+7f988a263000-7f988a361000 rw-p 00000000 00:00 0
+7f988a370000-7f988a373000 ---p 00000000 00:00 0
+7f988a373000-7f988a471000 rw-p 00000000 00:00 0
+7f988a480000-7f988a483000 ---p 00000000 00:00 0
+7f988a483000-7f988a581000 rw-p 00000000 00:00 0
+7f988a590000-7f988a593000 ---p 00000000 00:00 0
+7f988a593000-7f988a691000 rw-p 00000000 00:00 0
+7f988a6a0000-7f988a6a3000 ---p 00000000 00:00 0
+7f988a6a3000-7f988a7a1000 rw-p 00000000 00:00 0
+7f988a7b0000-7f988a7b3000 ---p 00000000 00:00 0
+7f988a7b3000-7f988a8b1000 rw-p 00000000 00:00 0
+7f988a8c0000-7f988a8c1000 ---p 00000000 00:00 0
+7f988a8c1000-7f988a9c1000 rw-p 00000000 00:00 0
+7f988a9d0000-7f988aad1000 rw-p 00000000 00:00 0
+7f988aae0000-7f988abe1000 rw-p 00000000 00:00 0
+7f988abf0000-7f988acf1000 rw-p 00000000 00:00 0
+7f988ad00000-7f988ae01000 rw-p 00000000 00:00 0
+7f988ae10000-7f988af11000 rw-p 00000000 00:00 0
+7f988af20000-7f988b021000 rw-p 00000000 00:00 0
+7f988b030000-7f988b07e000 rw-p 00000000 00:00 0
+7f988b081000-7f988b250000 r--s 03c32000 00:00 219985             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+7f988b250000-7f988b2c6000 rw-p 00000000 00:00 0
+7f988b2d0000-7f988b32b000 rw-p 00000000 00:00 0
+7f988b330000-7f988b7b0000 rw-p 00000000 00:00 0
+7f988b7b0000-7f988bb30000 ---p 00000000 00:00 0
+7f988bb30000-7f988bf28000 rw-p 00000000 00:00 0
+7f988bf30000-7f988bf58000 rw-p 00000000 00:00 0
+7f988bf60000-7f988bf61000 ---p 00000000 00:00 0
+7f988bf61000-7f988c061000 rw-p 00000000 00:00 0
+7f988c070000-7f988c09b000 rw-p 00000000 00:00 0
+7f988c09b000-7f988c316000 ---p 00000000 00:00 0
+7f988c320000-7f988c34b000 rw-p 00000000 00:00 0
+7f988c34b000-7f988c5c5000 ---p 00000000 00:00 0
+7f988c5c5000-7f988c5df000 rw-p 00000000 00:00 0
+7f988c5df000-7f988c718000 ---p 00000000 00:00 0
+7f988c718000-7f988c719000 rw-p 00000000 00:00 0
+7f988c720000-7f988c72b000 rw-p 00000000 00:00 0
+7f988c72b000-7f988cae0000 ---p 00000000 00:00 0
+7f988cae0000-7f988cda0000 rwxp 00000000 00:00 0
+7f988cda0000-7f989bae0000 ---p 00000000 00:00 0
+7f989bae0000-7f989bae8000 r-xp 00000000 00:00 220037             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f989bae8000-7f989bae9000 ---p 00008000 00:00 220037             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f989bae9000-7f989bce7000 ---p 00000009 00:00 220037             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f989bce7000-7f989bce8000 r--p 00007000 00:00 220037             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f989bce8000-7f989bce9000 rw-p 00008000 00:00 220037             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f989bcf0000-7f989bcfb000 r-xp 00000000 00:00 142495             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f989bcfb000-7f989bcfc000 ---p 0000b000 00:00 142495             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f989bcfc000-7f989befa000 ---p 0000000c 00:00 142495             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f989befa000-7f989befb000 r--p 0000a000 00:00 142495             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f989befb000-7f989befc000 rw-p 0000b000 00:00 142495             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f989befc000-7f989bf02000 rw-p 00000000 00:00 0
+7f989bf10000-7f989bf1b000 r-xp 00000000 00:00 142638             /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7f989bf1b000-7f989bf1c000 ---p 0000b000 00:00 142638             /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7f989bf1c000-7f989c11a000 ---p 0000000c 00:00 142638             /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7f989c11a000-7f989c11b000 r--p 0000a000 00:00 142638             /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7f989c11b000-7f989c11c000 rw-p 0000b000 00:00 142638             /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7f989c120000-7f989c136000 r-xp 00000000 00:00 142440             /lib/x86_64-linux-gnu/libnsl-2.23.so
+7f989c136000-7f989c137000 ---p 00016000 00:00 142440             /lib/x86_64-linux-gnu/libnsl-2.23.so
+7f989c137000-7f989c335000 ---p 00000017 00:00 142440             /lib/x86_64-linux-gnu/libnsl-2.23.so
+7f989c335000-7f989c336000 r--p 00015000 00:00 142440             /lib/x86_64-linux-gnu/libnsl-2.23.so
+7f989c336000-7f989c337000 rw-p 00016000 00:00 142440             /lib/x86_64-linux-gnu/libnsl-2.23.so
+7f989c337000-7f989c339000 rw-p 00000000 00:00 0
+7f989c340000-7f989c348000 r-xp 00000000 00:00 142814             /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7f989c348000-7f989c349000 ---p 00008000 00:00 142814             /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7f989c349000-7f989c547000 ---p 00000009 00:00 142814             /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7f989c547000-7f989c548000 r--p 00007000 00:00 142814             /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7f989c548000-7f989c549000 rw-p 00008000 00:00 142814             /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7f989c550000-7f989c57d000 r-xp 00000000 00:00 220059             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f989c57d000-7f989c57f000 ---p 0002d000 00:00 220059             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f989c57f000-7f989c77c000 ---p 0000002f 00:00 220059             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f989c77c000-7f989c77d000 r--p 0002c000 00:00 220059             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f989c77d000-7f989c77f000 rw-p 0002d000 00:00 220059             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f989c780000-7f989c78f000 r-xp 00000000 00:00 220045             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f989c78f000-7f989c791000 ---p 0000f000 00:00 220045             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f989c791000-7f989c98e000 ---p 00000011 00:00 220045             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f989c98e000-7f989c990000 r--p 0000e000 00:00 220045             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f989c990000-7f989c991000 rw-p 00010000 00:00 220045             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f989c9a0000-7f989d5fd000 r-xp 00000000 00:00 220013             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f989d5fd000-7f989d6c8000 ---p 00c5d000 00:00 220013             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f989d6c8000-7f989d7fd000 ---p 00000d28 00:00 220013             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f989d7fd000-7f989d891000 r--p 00c5d000 00:00 220013             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f989d891000-7f989d8ba000 rw-p 00cf1000 00:00 220013             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f989d8ba000-7f989d8ea000 rw-p 00000000 00:00 0
+7f989d8f0000-7f989d906000 r-xp 00000000 00:00 142812             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f989d906000-7f989db05000 ---p 00000016 00:00 142812             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f989db05000-7f989db06000 rw-p 00015000 00:00 142812             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f989db10000-7f989dc82000 r-xp 00000000 00:00 185165             /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f989dc82000-7f989dc8f000 ---p 00172000 00:00 185165             /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f989dc8f000-7f989de82000 ---p 0000017f 00:00 185165             /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f989de82000-7f989de8c000 r--p 00172000 00:00 185165             /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f989de8c000-7f989de8e000 rw-p 0017c000 00:00 185165             /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f989de8e000-7f989de92000 rw-p 00000000 00:00 0
+7f989de97000-7f989df0c000 r-xp 00000000 00:00 218387             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/JPype1-0.6.3-py2.7-linux-x86_64.egg/_jpype.so
+7f989df0c000-7f989e10b000 ---p 00075000 00:00 218387             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/JPype1-0.6.3-py2.7-linux-x86_64.egg/_jpype.so
+7f989e10b000-7f989e10d000 r--p 00074000 00:00 218387             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/JPype1-0.6.3-py2.7-linux-x86_64.egg/_jpype.so
+7f989e10d000-7f989e110000 rw-p 00076000 00:00 218387             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/JPype1-0.6.3-py2.7-linux-x86_64.egg/_jpype.so
+7f989e110000-7f989e118000 r-xp 00000000 00:00 446099             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/_scrypt.so
+7f989e118000-7f989e138000 ---p 00008000 00:00 446099             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/_scrypt.so
+7f989e138000-7f989e317000 ---p 00000028 00:00 446099             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/_scrypt.so
+7f989e317000-7f989e318000 r--p 00007000 00:00 446099             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/_scrypt.so
+7f989e318000-7f989e319000 rw-p 00008000 00:00 446099             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/_scrypt.so
+7f989e320000-7f989e322000 r-xp 00000000 00:00 216473             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aesni.so
+7f989e322000-7f989e32d000 ---p 00002000 00:00 216473             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aesni.so
+7f989e32d000-7f989e521000 ---p 0000000d 00:00 216473             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aesni.so
+7f989e521000-7f989e522000 rw-p 00001000 00:00 216473             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aesni.so
+7f989e530000-7f989e570000 rw-p 00000000 00:00 0
+7f989e570000-7f989e576000 r-xp 00000000 00:00 216531             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aes.so
+7f989e576000-7f989e57e000 ---p 00006000 00:00 216531             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aes.so
+7f989e57e000-7f989e775000 ---p 0000000e 00:00 216531             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aes.so
+7f989e775000-7f989e776000 rw-p 00005000 00:00 216531             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_aes.so
+7f989e780000-7f989e782000 r-xp 00000000 00:00 216560             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ocb.so
+7f989e782000-7f989e788000 ---p 00002000 00:00 216560             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ocb.so
+7f989e788000-7f989e981000 ---p 00000008 00:00 216560             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ocb.so
+7f989e981000-7f989e982000 rw-p 00001000 00:00 216560             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ocb.so
+7f989e990000-7f989e991000 r-xp 00000000 00:00 216456             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_clmul.so
+7f989e991000-7f989e999000 ---p 00001000 00:00 216456             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_clmul.so
+7f989e999000-7f989eb90000 ---p 00000009 00:00 216456             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_clmul.so
+7f989eb90000-7f989eb91000 rw-p 00000000 00:00 216456             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_clmul.so
+7f989eba0000-7f989eba1000 r-xp 00000000 00:00 216376             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_portable.so
+7f989eba1000-7f989eba5000 ---p 00001000 00:00 216376             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_portable.so
+7f989eba5000-7f989eda1000 ---p 00000005 00:00 216376             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_portable.so
+7f989eda1000-7f989eda2000 rw-p 00001000 00:00 216376             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_ghash_portable.so
+7f989edb0000-7f989edb1000 r-xp 00000000 00:00 216755             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_cpuid_c.so
+7f989edb1000-7f989edb3000 ---p 00001000 00:00 216755             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_cpuid_c.so
+7f989edb3000-7f989efb0000 ---p 00000003 00:00 216755             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_cpuid_c.so
+7f989efb0000-7f989efb1000 rw-p 00000000 00:00 216755             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_cpuid_c.so
+7f989efc0000-7f989efc1000 r-xp 00000000 00:00 221605             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Protocol/_scrypt.so
+7f989efc1000-7f989efc5000 ---p 00001000 00:00 221605             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Protocol/_scrypt.so
+7f989efc5000-7f989f1c0000 ---p 00000005 00:00 221605             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Protocol/_scrypt.so
+7f989f1c0000-7f989f1c1000 rw-p 00000000 00:00 221605             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Protocol/_scrypt.so
+7f989f1d0000-7f989f1d1000 r-xp 00000000 00:00 216504             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_Salsa20.so
+7f989f1d1000-7f989f1d6000 ---p 00001000 00:00 216504             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_Salsa20.so
+7f989f1d6000-7f989f3d1000 ---p 00000006 00:00 216504             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_Salsa20.so
+7f989f3d1000-7f989f3d2000 rw-p 00001000 00:00 216504             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_Salsa20.so
+7f989f3e0000-7f989f3e2000 r-xp 00000000 00:00 216303             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_MD5.so
+7f989f3e2000-7f989f3e7000 ---p 00002000 00:00 216303             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_MD5.so
+7f989f3e7000-7f989f5e1000 ---p 00000007 00:00 216303             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_MD5.so
+7f989f5e1000-7f989f5e2000 rw-p 00001000 00:00 216303             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_MD5.so
+7f989f5f0000-7f989f5f4000 r-xp 00000000 00:00 216386             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA256.so
+7f989f5f4000-7f989f5f9000 ---p 00004000 00:00 216386             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA256.so
+7f989f5f9000-7f989f7f3000 ---p 00000009 00:00 216386             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA256.so
+7f989f7f3000-7f989f7f4000 rw-p 00003000 00:00 216386             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA256.so
+7f989f800000-7f989f803000 r-xp 00000000 00:00 216358             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA1.so
+7f989f803000-7f989f815000 ---p 00003000 00:00 216358             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA1.so
+7f989f815000-7f989fa02000 ---p 00000015 00:00 216358             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA1.so
+7f989fa02000-7f989fa03000 rw-p 00002000 00:00 216358             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_SHA1.so
+7f989fa10000-7f989fa50000 rw-p 00000000 00:00 0
+7f989fa50000-7f989fa52000 r-xp 00000000 00:00 216311             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_BLAKE2s.so
+7f989fa52000-7f989fa56000 ---p 00002000 00:00 216311             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_BLAKE2s.so
+7f989fa56000-7f989fc51000 ---p 00000006 00:00 216311             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_BLAKE2s.so
+7f989fc51000-7f989fc52000 rw-p 00001000 00:00 216311             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Hash/_BLAKE2s.so
+7f989fc60000-7f989fc61000 r-xp 00000000 00:00 216861             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_strxor.so
+7f989fc61000-7f989fc64000 ---p 00001000 00:00 216861             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_strxor.so
+7f989fc64000-7f989fe60000 ---p 00000004 00:00 216861             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_strxor.so
+7f989fe60000-7f989fe61000 rw-p 00000000 00:00 216861             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Util/_strxor.so
+7f989fe70000-7f989fe72000 r-xp 00000000 00:00 216594             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ctr.so
+7f989fe72000-7f989fe76000 ---p 00002000 00:00 216594             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ctr.so
+7f989fe76000-7f98a0071000 ---p 00000006 00:00 216594             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ctr.so
+7f98a0071000-7f98a0072000 rw-p 00001000 00:00 216594             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ctr.so
+7f98a0080000-7f98a0081000 r-xp 00000000 00:00 216555             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ofb.so
+7f98a0081000-7f98a0084000 ---p 00001000 00:00 216555             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ofb.so
+7f98a0084000-7f98a0280000 ---p 00000004 00:00 216555             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ofb.so
+7f98a0280000-7f98a0281000 rw-p 00000000 00:00 216555             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ofb.so
+7f98a0290000-7f98a0291000 r-xp 00000000 00:00 216547             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cfb.so
+7f98a0291000-7f98a0295000 ---p 00001000 00:00 216547             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cfb.so
+7f98a0295000-7f98a0491000 ---p 00000005 00:00 216547             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cfb.so
+7f98a0491000-7f98a0492000 rw-p 00001000 00:00 216547             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cfb.so
+7f98a04a0000-7f98a04a1000 r-xp 00000000 00:00 216497             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cbc.so
+7f98a04a1000-7f98a04a5000 ---p 00001000 00:00 216497             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cbc.so
+7f98a04a5000-7f98a06a1000 ---p 00000005 00:00 216497             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cbc.so
+7f98a06a1000-7f98a06a2000 rw-p 00001000 00:00 216497             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_cbc.so
+7f98a06b0000-7f98a06b1000 r-xp 00000000 00:00 216484             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ecb.so
+7f98a06b1000-7f98a06b3000 ---p 00001000 00:00 216484             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ecb.so
+7f98a06b3000-7f98a08b0000 ---p 00000003 00:00 216484             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ecb.so
+7f98a08b0000-7f98a08b1000 rw-p 00000000 00:00 216484             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/pycryptodome-3.6.6-py2.7-linux-x86_64.egg/Crypto/Cipher/_raw_ecb.so
+7f98a08c0000-7f98a0a40000 rw-p 00000000 00:00 0
+7f98a0a40000-7f98a0a48000 r-xp 00000000 00:00 445020             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/aes256gcm_nacl-0.1.6-py2.7-linux-x86_64.egg/zerodbext/_aes256gcm_sodium.so
+7f98a0a48000-7f98a0a78000 ---p 00008000 00:00 445020             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/aes256gcm_nacl-0.1.6-py2.7-linux-x86_64.egg/zerodbext/_aes256gcm_sodium.so
+7f98a0a78000-7f98a0c47000 ---p 00000038 00:00 445020             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/aes256gcm_nacl-0.1.6-py2.7-linux-x86_64.egg/zerodbext/_aes256gcm_sodium.so
+7f98a0c47000-7f98a0c48000 r--p 00007000 00:00 445020             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/aes256gcm_nacl-0.1.6-py2.7-linux-x86_64.egg/zerodbext/_aes256gcm_sodium.so
+7f98a0c48000-7f98a0c49000 rw-p 00008000 00:00 445020             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/aes256gcm_nacl-0.1.6-py2.7-linux-x86_64.egg/zerodbext/_aes256gcm_sodium.so
+7f98a0c50000-7f98a0cd0000 rw-p 00000000 00:00 0
+7f98a0cd0000-7f98a0ce4000 r-xp 00000000 00:00 444681             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_fsBTree.so
+7f98a0ce4000-7f98a0d21000 ---p 00014000 00:00 444681             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_fsBTree.so
+7f98a0d21000-7f98a0ee4000 ---p 00000051 00:00 444681             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_fsBTree.so
+7f98a0ee4000-7f98a0ee6000 rw-p 00014000 00:00 444681             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_fsBTree.so
+7f98a0ef0000-7f98a0f30000 rw-p 00000000 00:00 0
+7f98a0f30000-7f98a0f37000 r-xp 00000000 00:00 142637             /lib/x86_64-linux-gnu/librt-2.23.so
+7f98a0f37000-7f98a0f38000 ---p 00007000 00:00 142637             /lib/x86_64-linux-gnu/librt-2.23.so
+7f98a0f38000-7f98a1136000 ---p 00000008 00:00 142637             /lib/x86_64-linux-gnu/librt-2.23.so
+7f98a1136000-7f98a1137000 r--p 00006000 00:00 142637             /lib/x86_64-linux-gnu/librt-2.23.so
+7f98a1137000-7f98a1138000 rw-p 00007000 00:00 142637             /lib/x86_64-linux-gnu/librt-2.23.so
+7f98a1140000-7f98a11c0000 rw-p 00000000 00:00 0
+7f98a11c0000-7f98a11c6000 r-xp 00000000 00:00 71678              /usr/lib/python2.7/lib-dynload/_multiprocessing.x86_64-linux-gnu.so
+7f98a11c6000-7f98a11c8000 ---p 00006000 00:00 71678              /usr/lib/python2.7/lib-dynload/_multiprocessing.x86_64-linux-gnu.so
+7f98a11c8000-7f98a13c5000 ---p 00000008 00:00 71678              /usr/lib/python2.7/lib-dynload/_multiprocessing.x86_64-linux-gnu.so
+7f98a13c5000-7f98a13c6000 r--p 00005000 00:00 71678              /usr/lib/python2.7/lib-dynload/_multiprocessing.x86_64-linux-gnu.so
+7f98a13c6000-7f98a13c7000 rw-p 00006000 00:00 71678              /usr/lib/python2.7/lib-dynload/_multiprocessing.x86_64-linux-gnu.so
+7f98a13d0000-7f98a1450000 rw-p 00000000 00:00 0
+7f98a1450000-7f98a1451000 r-xp 00000000 00:00 442045             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.index-4.3.0-py2.7-linux-x86_64.egg/zope/index/text/okascore.so
+7f98a1451000-7f98a1456000 ---p 00001000 00:00 442045             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.index-4.3.0-py2.7-linux-x86_64.egg/zope/index/text/okascore.so
+7f98a1456000-7f98a1651000 ---p 00000006 00:00 442045             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.index-4.3.0-py2.7-linux-x86_64.egg/zope/index/text/okascore.so
+7f98a1651000-7f98a1652000 rw-p 00001000 00:00 442045             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.index-4.3.0-py2.7-linux-x86_64.egg/zope/index/text/okascore.so
+7f98a1660000-7f98a17a1000 rw-p 00000000 00:00 0
+7f98a17b0000-7f98a18b0000 rw-p 00000000 00:00 0
+7f98a18b0000-7f98a18c5000 r-xp 00000000 00:00 444642             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LFBTree.so
+7f98a18c5000-7f98a1908000 ---p 00015000 00:00 444642             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LFBTree.so
+7f98a1908000-7f98a1ac5000 ---p 00000058 00:00 444642             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LFBTree.so
+7f98a1ac5000-7f98a1ac7000 rw-p 00015000 00:00 444642             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LFBTree.so
+7f98a1ad0000-7f98a1ae5000 r-xp 00000000 00:00 444667             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LOBTree.so
+7f98a1ae5000-7f98a1b27000 ---p 00015000 00:00 444667             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LOBTree.so
+7f98a1b27000-7f98a1ce5000 ---p 00000057 00:00 444667             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LOBTree.so
+7f98a1ce5000-7f98a1ce7000 rw-p 00015000 00:00 444667             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LOBTree.so
+7f98a1cf0000-7f98a1d05000 r-xp 00000000 00:00 444684             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LLBTree.so
+7f98a1d05000-7f98a1d48000 ---p 00015000 00:00 444684             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LLBTree.so
+7f98a1d48000-7f98a1f05000 ---p 00000058 00:00 444684             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LLBTree.so
+7f98a1f05000-7f98a1f07000 rw-p 00015000 00:00 444684             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_LLBTree.so
+7f98a1f10000-7f98a1f25000 r-xp 00000000 00:00 444666             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OLBTree.so
+7f98a1f25000-7f98a1f62000 ---p 00015000 00:00 444666             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OLBTree.so
+7f98a1f62000-7f98a2125000 ---p 00000052 00:00 444666             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OLBTree.so
+7f98a2125000-7f98a2127000 rw-p 00015000 00:00 444666             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OLBTree.so
+7f98a2130000-7f98a2145000 r-xp 00000000 00:00 444656             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IFBTree.so
+7f98a2145000-7f98a2185000 ---p 00015000 00:00 444656             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IFBTree.so
+7f98a2185000-7f98a2345000 ---p 00000055 00:00 444656             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IFBTree.so
+7f98a2345000-7f98a2347000 rw-p 00015000 00:00 444656             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IFBTree.so
+7f98a2350000-7f98a2365000 r-xp 00000000 00:00 444640             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IOBTree.so
+7f98a2365000-7f98a23a5000 ---p 00015000 00:00 444640             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IOBTree.so
+7f98a23a5000-7f98a2565000 ---p 00000055 00:00 444640             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IOBTree.so
+7f98a2565000-7f98a2567000 rw-p 00015000 00:00 444640             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IOBTree.so
+7f98a2570000-7f98a2585000 r-xp 00000000 00:00 444692             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IIBTree.so
+7f98a2585000-7f98a25c4000 ---p 00015000 00:00 444692             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IIBTree.so
+7f98a25c4000-7f98a2784000 ---p 00000054 00:00 444692             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IIBTree.so
+7f98a2784000-7f98a2786000 rw-p 00014000 00:00 444692             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_IIBTree.so
+7f98a2790000-7f98a27a4000 r-xp 00000000 00:00 444651             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OIBTree.so
+7f98a27a4000-7f98a27df000 ---p 00014000 00:00 444651             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OIBTree.so
+7f98a27df000-7f98a29a4000 ---p 0000004f 00:00 444651             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OIBTree.so
+7f98a29a4000-7f98a29a6000 rw-p 00014000 00:00 444651             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OIBTree.so
+7f98a29b0000-7f98a29f0000 rw-p 00000000 00:00 0
+7f98a29f0000-7f98a2a04000 r-xp 00000000 00:00 444645             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OOBTree.so
+7f98a2a04000-7f98a2a3e000 ---p 00014000 00:00 444645             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OOBTree.so
+7f98a2a3e000-7f98a2c04000 ---p 0000004e 00:00 444645             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OOBTree.so
+7f98a2c04000-7f98a2c06000 rw-p 00014000 00:00 444645             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/BTrees-4.5.1-py2.7-linux-x86_64.egg/BTrees/_OOBTree.so
+7f98a2c10000-7f98a2cd0000 rw-p 00000000 00:00 0
+7f98a2cd0000-7f98a2ce7000 r-xp 00000000 00:00 444562             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zodbpickle-1.0.2-py2.7-linux-x86_64.egg/zodbpickle/_pickle.so
+7f98a2ce7000-7f98a2d2e000 ---p 00017000 00:00 444562             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zodbpickle-1.0.2-py2.7-linux-x86_64.egg/zodbpickle/_pickle.so
+7f98a2d2e000-7f98a2ee6000 ---p 0000005e 00:00 444562             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zodbpickle-1.0.2-py2.7-linux-x86_64.egg/zodbpickle/_pickle.so
+7f98a2ee6000-7f98a2ee8000 rw-p 00016000 00:00 444562             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zodbpickle-1.0.2-py2.7-linux-x86_64.egg/zodbpickle/_pickle.so
+7f98a2ef0000-7f98a2f30000 rw-p 00000000 00:00 0
+7f98a2f30000-7f98a2f35000 r-xp 00000000 00:00 445643             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPickleCache.so
+7f98a2f35000-7f98a2f42000 ---p 00005000 00:00 445643             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPickleCache.so
+7f98a2f42000-7f98a3134000 ---p 00000012 00:00 445643             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPickleCache.so
+7f98a3134000-7f98a3135000 rw-p 00004000 00:00 445643             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPickleCache.so
+7f98a3140000-7f98a3147000 r-xp 00000000 00:00 444753             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/.libs_cffi_backend/libffi-45372312.so.6.0.4
+7f98a3147000-7f98a3165000 ---p 00007000 00:00 444753             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/.libs_cffi_backend/libffi-45372312.so.6.0.4
+7f98a3165000-7f98a3347000 ---p 00000025 00:00 444753             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/.libs_cffi_backend/libffi-45372312.so.6.0.4
+7f98a3347000-7f98a3348000 rw-p 00007000 00:00 444753             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/.libs_cffi_backend/libffi-45372312.so.6.0.4
+7f98a3348000-7f98a3349000 rw-p 00024000 00:00 444753             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/.libs_cffi_backend/libffi-45372312.so.6.0.4
+7f98a3350000-7f98a3379000 r-xp 00000000 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a3379000-7f98a3410000 ---p 00029000 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a3410000-7f98a3578000 ---p 000000c0 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a3578000-7f98a357e000 rw-p 00028000 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a357e000-7f98a3581000 rw-p 00000000 00:00 0
+7f98a3581000-7f98a3582000 rw-p 000bc000 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a3582000-7f98a3585000 rw-p 000bd000 00:00 444723             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/cffi-1.11.5-py2.7-linux-x86_64.egg/_cffi_backend.so
+7f98a3590000-7f98a3592000 r-xp 00000000 00:00 445650             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_ring.so
+7f98a3592000-7f98a3597000 ---p 00002000 00:00 445650             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_ring.so
+7f98a3597000-7f98a3791000 ---p 00000007 00:00 445650             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_ring.so
+7f98a3791000-7f98a3792000 rw-p 00001000 00:00 445650             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_ring.so
+7f98a37a0000-7f98a37a3000 r-xp 00000000 00:00 445660             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_timestamp.so
+7f98a37a3000-7f98a37ae000 ---p 00003000 00:00 445660             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_timestamp.so
+7f98a37ae000-7f98a39a2000 ---p 0000000e 00:00 445660             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_timestamp.so
+7f98a39a2000-7f98a39a3000 rw-p 00002000 00:00 445660             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/_timestamp.so
+7f98a39b0000-7f98a39f0000 rw-p 00000000 00:00 0
+7f98a39f0000-7f98a39f7000 r-xp 00000000 00:00 445652             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPersistence.so
+7f98a39f7000-7f98a3a0a000 ---p 00007000 00:00 445652             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPersistence.so
+7f98a3a0a000-7f98a3bf6000 ---p 0000001a 00:00 445652             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPersistence.so
+7f98a3bf6000-7f98a3bf8000 rw-p 00006000 00:00 445652             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/persistent-4.4.2-py2.7-linux-x86_64.egg/persistent/cPersistence.so
+7f98a3c00000-7f98a3c40000 rw-p 00000000 00:00 0
+7f98a3c40000-7f98a3c46000 r-xp 00000000 00:00 445476             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.interface-4.5.0-py2.7-linux-x86_64.egg/zope/interface/_zope_interface_coptimizations.so
+7f98a3c46000-7f98a3c56000 ---p 00006000 00:00 445476             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.interface-4.5.0-py2.7-linux-x86_64.egg/zope/interface/_zope_interface_coptimizations.so
+7f98a3c56000-7f98a3e45000 ---p 00000016 00:00 445476             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.interface-4.5.0-py2.7-linux-x86_64.egg/zope/interface/_zope_interface_coptimizations.so
+7f98a3e45000-7f98a3e46000 r--p 00005000 00:00 445476             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.interface-4.5.0-py2.7-linux-x86_64.egg/zope/interface/_zope_interface_coptimizations.so
+7f98a3e46000-7f98a3e48000 rw-p 00006000 00:00 445476             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zope.interface-4.5.0-py2.7-linux-x86_64.egg/zope/interface/_zope_interface_coptimizations.so
+7f98a3e50000-7f98a4250000 rw-p 00000000 00:00 0
+7f98a4250000-7f98a4254000 r-xp 00000000 00:00 142794             /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f98a4254000-7f98a4255000 ---p 00004000 00:00 142794             /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f98a4255000-7f98a4453000 ---p 00000005 00:00 142794             /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f98a4453000-7f98a4454000 r--p 00003000 00:00 142794             /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f98a4454000-7f98a4455000 rw-p 00004000 00:00 142794             /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f98a4460000-7f98a4467000 r-xp 00000000 00:00 149749             /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7f98a4467000-7f98a4468000 ---p 00007000 00:00 149749             /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7f98a4468000-7f98a4666000 ---p 00000008 00:00 149749             /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7f98a4666000-7f98a4667000 r--p 00006000 00:00 149749             /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7f98a4667000-7f98a4668000 rw-p 00007000 00:00 149749             /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7f98a4670000-7f98a468e000 r-xp 00000000 00:00 71652              /usr/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so
+7f98a468e000-7f98a4693000 ---p 0001e000 00:00 71652              /usr/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so
+7f98a4693000-7f98a488d000 ---p 00000023 00:00 71652              /usr/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so
+7f98a488d000-7f98a488e000 r--p 0001d000 00:00 71652              /usr/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so
+7f98a488e000-7f98a4892000 rw-p 0001e000 00:00 71652              /usr/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so
+7f98a48a0000-7f98a4a20000 rw-p 00000000 00:00 0
+7f98a4a20000-7f98a4a22000 r-xp 00000000 00:00 415152             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/markupsafe/_speedups.so
+7f98a4a22000-7f98a4a27000 ---p 00002000 00:00 415152             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/markupsafe/_speedups.so
+7f98a4a27000-7f98a4c21000 ---p 00000007 00:00 415152             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/markupsafe/_speedups.so
+7f98a4c21000-7f98a4c22000 r--p 00001000 00:00 415152             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/markupsafe/_speedups.so
+7f98a4c22000-7f98a4c23000 rw-p 00002000 00:00 415152             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/markupsafe/_speedups.so
+7f98a4c30000-7f98a4c70000 rw-p 00000000 00:00 0
+7f98a4c70000-7f98a4c7c000 r-xp 00000000 00:00 71564              /usr/lib/python2.7/lib-dynload/_json.x86_64-linux-gnu.so
+7f98a4c7c000-7f98a4c7e000 ---p 0000c000 00:00 71564              /usr/lib/python2.7/lib-dynload/_json.x86_64-linux-gnu.so
+7f98a4c7e000-7f98a4e7b000 ---p 0000000e 00:00 71564              /usr/lib/python2.7/lib-dynload/_json.x86_64-linux-gnu.so
+7f98a4e7b000-7f98a4e7c000 r--p 0000b000 00:00 71564              /usr/lib/python2.7/lib-dynload/_json.x86_64-linux-gnu.so
+7f98a4e7c000-7f98a4e7d000 rw-p 0000c000 00:00 71564              /usr/lib/python2.7/lib-dynload/_json.x86_64-linux-gnu.so
+7f98a4e80000-7f98a50c1000 rw-p 00000000 00:00 0
+7f98a50d0000-7f98a512e000 r-xp 00000000 00:00 61346              /lib/x86_64-linux-gnu/libssl.so.1.0.0
+7f98a512e000-7f98a5139000 ---p 0005e000 00:00 61346              /lib/x86_64-linux-gnu/libssl.so.1.0.0
+7f98a5139000-7f98a532e000 ---p 00000069 00:00 61346              /lib/x86_64-linux-gnu/libssl.so.1.0.0
+7f98a532e000-7f98a5332000 r--p 0005e000 00:00 61346              /lib/x86_64-linux-gnu/libssl.so.1.0.0
+7f98a5332000-7f98a5339000 rw-p 00062000 00:00 61346              /lib/x86_64-linux-gnu/libssl.so.1.0.0
+7f98a5340000-7f98a5355000 r-xp 00000000 00:00 72132              /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+7f98a5355000-7f98a535a000 ---p 00015000 00:00 72132              /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+7f98a535a000-7f98a5554000 ---p 0000001a 00:00 72132              /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+7f98a5554000-7f98a5555000 r--p 00014000 00:00 72132              /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+7f98a5555000-7f98a5559000 rw-p 00015000 00:00 72132              /usr/lib/python2.7/lib-dynload/_ssl.x86_64-linux-gnu.so
+7f98a5560000-7f98a55a0000 rw-p 00000000 00:00 0
+7f98a55a0000-7f98a57ba000 r-xp 00000000 00:00 61344              /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f98a57ba000-7f98a57e1000 ---p 0021a000 00:00 61344              /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f98a57e1000-7f98a59b9000 ---p 00000241 00:00 61344              /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f98a59b9000-7f98a59d5000 r--p 00219000 00:00 61344              /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f98a59d5000-7f98a59e1000 rw-p 00235000 00:00 61344              /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f98a59e1000-7f98a59e4000 rw-p 00000000 00:00 0
+7f98a59f0000-7f98a59f6000 r-xp 00000000 00:00 72197              /usr/lib/python2.7/lib-dynload/_hashlib.x86_64-linux-gnu.so
+7f98a59f6000-7f98a59f8000 ---p 00006000 00:00 72197              /usr/lib/python2.7/lib-dynload/_hashlib.x86_64-linux-gnu.so
+7f98a59f8000-7f98a5bf5000 ---p 00000008 00:00 72197              /usr/lib/python2.7/lib-dynload/_hashlib.x86_64-linux-gnu.so
+7f98a5bf5000-7f98a5bf6000 r--p 00005000 00:00 72197              /usr/lib/python2.7/lib-dynload/_hashlib.x86_64-linux-gnu.so
+7f98a5bf6000-7f98a5bf7000 rw-p 00006000 00:00 72197              /usr/lib/python2.7/lib-dynload/_hashlib.x86_64-linux-gnu.so
+7f98a5c00000-7f98a5cc0000 rw-p 00000000 00:00 0
+7f98a5cc0000-7f98a5dc8000 r-xp 00000000 00:00 142527             /lib/x86_64-linux-gnu/libm-2.23.so
+7f98a5dc8000-7f98a5dca000 ---p 00108000 00:00 142527             /lib/x86_64-linux-gnu/libm-2.23.so
+7f98a5dca000-7f98a5fc7000 ---p 0000010a 00:00 142527             /lib/x86_64-linux-gnu/libm-2.23.so
+7f98a5fc7000-7f98a5fc8000 r--p 00107000 00:00 142527             /lib/x86_64-linux-gnu/libm-2.23.so
+7f98a5fc8000-7f98a5fc9000 rw-p 00108000 00:00 142527             /lib/x86_64-linux-gnu/libm-2.23.so
+7f98a5fd0000-7f98a5fe9000 r-xp 00000000 00:00 142735             /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f98a5fe9000-7f98a5fea000 ---p 00019000 00:00 142735             /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f98a5fea000-7f98a61e8000 ---p 0000001a 00:00 142735             /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f98a61e8000-7f98a61e9000 r--p 00018000 00:00 142735             /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f98a61e9000-7f98a61ea000 rw-p 00019000 00:00 142735             /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f98a61f0000-7f98a61f2000 r-xp 00000000 00:00 142534             /lib/x86_64-linux-gnu/libutil-2.23.so
+7f98a61f2000-7f98a61f3000 ---p 00002000 00:00 142534             /lib/x86_64-linux-gnu/libutil-2.23.so
+7f98a61f3000-7f98a63f1000 ---p 00000003 00:00 142534             /lib/x86_64-linux-gnu/libutil-2.23.so
+7f98a63f1000-7f98a63f2000 r--p 00001000 00:00 142534             /lib/x86_64-linux-gnu/libutil-2.23.so
+7f98a63f2000-7f98a63f3000 rw-p 00002000 00:00 142534             /lib/x86_64-linux-gnu/libutil-2.23.so
+7f98a6400000-7f98a6403000 r-xp 00000000 00:00 142815             /lib/x86_64-linux-gnu/libdl-2.23.so
+7f98a6403000-7f98a6404000 ---p 00003000 00:00 142815             /lib/x86_64-linux-gnu/libdl-2.23.so
+7f98a6404000-7f98a6602000 ---p 00000004 00:00 142815             /lib/x86_64-linux-gnu/libdl-2.23.so
+7f98a6602000-7f98a6603000 r--p 00002000 00:00 142815             /lib/x86_64-linux-gnu/libdl-2.23.so
+7f98a6603000-7f98a6604000 rw-p 00003000 00:00 142815             /lib/x86_64-linux-gnu/libdl-2.23.so
+7f98a6610000-7f98a67d0000 r-xp 00000000 00:00 142712             /lib/x86_64-linux-gnu/libc-2.23.so
+7f98a67d0000-7f98a67d9000 ---p 001c0000 00:00 142712             /lib/x86_64-linux-gnu/libc-2.23.so
+7f98a67d9000-7f98a69d0000 ---p 000001c9 00:00 142712             /lib/x86_64-linux-gnu/libc-2.23.so
+7f98a69d0000-7f98a69d4000 r--p 001c0000 00:00 142712             /lib/x86_64-linux-gnu/libc-2.23.so
+7f98a69d4000-7f98a69d6000 rw-p 001c4000 00:00 142712             /lib/x86_64-linux-gnu/libc-2.23.so
+7f98a69d6000-7f98a69da000 rw-p 00000000 00:00 0
+7f98a69e0000-7f98a69f8000 r-xp 00000000 00:00 142496             /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f98a69f8000-7f98a6a02000 ---p 00018000 00:00 142496             /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f98a6a02000-7f98a6bf7000 ---p 00000022 00:00 142496             /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f98a6bf7000-7f98a6bf8000 r--p 00017000 00:00 142496             /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f98a6bf8000-7f98a6bf9000 rw-p 00018000 00:00 142496             /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f98a6bf9000-7f98a6bfd000 rw-p 00000000 00:00 0
+7f98a6c00000-7f98a6c25000 r-xp 00000000 00:00 142538             /lib/x86_64-linux-gnu/ld-2.23.so
+7f98a6c25000-7f98a6c26000 r-xp 00025000 00:00 142538             /lib/x86_64-linux-gnu/ld-2.23.so
+7f98a6c40000-7f98a6c81000 rw-p 00000000 00:00 0
+7f98a6c8d000-7f98a6e25000 r--p 00000000 00:00 145879             /usr/lib/locale/locale-archive
+7f98a6e25000-7f98a6e26000 r--p 00025000 00:00 142538             /lib/x86_64-linux-gnu/ld-2.23.so
+7f98a6e26000-7f98a6e27000 rw-p 00026000 00:00 142538             /lib/x86_64-linux-gnu/ld-2.23.so
+7f98a6e27000-7f98a6e28000 rw-p 00000000 00:00 0
+7f98a6e30000-7f98a6e31000 r--p 00000000 00:00 0
+7f98a6e40000-7f98a6e41000 rwxp 00000000 00:00 0
+7f98a6e50000-7f98a6f91000 rw-p 00000000 00:00 0
+7f98a6fa0000-7f98a6fa1000 rw-p 00000000 00:00 0
+7f98a6fa1000-7f98a6fa6000 r--s 0009d000 00:00 219983             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar
+7f98a6fa6000-7f98a6fa8000 r--s 00004000 00:00 446092             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/nics-crypto.jar
+7f98a6fa8000-7f98a6faa000 r--s 00001000 00:00 446090             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/jpbc-api-1.2.0.jar
+7f98a6faa000-7f98a6fb0000 r--s 00033000 00:00 446089             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/commons-codec-1.6.jar
+7f98a6fb0000-7f98a6fb1000 rw-p 00000000 00:00 0
+7f98a6fb2000-7f98a6fb6000 r--s 00030000 00:00 446091             /mnt/c/Users/hs/test/flaskrest/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/jpbc-plaf-1.2.0.jar
+7f98a6fb6000-7f98a6fb7000 r--s 00010000 00:00 220000             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar
+7f98a6fb7000-7f98a6fba000 r--s 00038000 00:00 219997             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7f98a6fba000-7f98a6fc0000 r--s 0003b000 00:00 220003             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7f98a6fc0000-7f98a6fc1000 rw-p 00000000 00:00 0
+7f98a6fc1000-7f98a6fc3000 r--s 00008000 00:00 220005             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar
+7f98a6fc3000-7f98a6fcd000 r--s 00116000 00:00 220001             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar
+7f98a6fcd000-7f98a6fd0000 r--s 0000f000 00:00 219994             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7f98a6fd0000-7f98a6fd1000 rw-p 00000000 00:00 0
+7f98a6fd1000-7f98a6fd2000 r--s 0000a000 00:00 220006             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar
+7f98a6fd2000-7f98a6fd4000 r--s 00001000 00:00 219999             /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+7f98a6fd4000-7f98a6fdc000 rw-s 00000000 00:00 446122             /tmp/hsperfdata_root/5720
+7fffe3844000-7fffe3f44000 rw-p 00000000 00:00 0                  [stack]
+7fffe3f44000-7fffe3f47000 ---p 00000000 00:00 0
+7fffe3f47000-7fffe4044000 rw-p 00000000 00:00 0
+7fffe46a4000-7fffe46a5000 r-xp 00000000 00:00 0                  [vdso]
+
+VM Arguments:
+jvm_args: -XX:ParallelGCThreads=1 
+java_command: <unknown>
+java_class_path (initial): /mnt/c/Users/hs/test/flaskrest/local/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/commons-codec-1.6.jar:/mnt/c/Users/hs/test/flaskrest/local/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/jpbc-plaf-1.2.0.jar:/mnt/c/Users/hs/test/flaskrest/local/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/jpbc-api-1.2.0.jar:/mnt/c/Users/hs/test/flaskrest/local/lib/python2.7/site-packages/zerodb-0.99.0b1-py2.7.egg/zerodb/afgh/crypto/jars/nics-crypto.jar
+Launcher Type: generic
+
+Environment Variables:
+_JAVA_OPTIONS=-XX:ParallelGCThreads=1
+PATH=/mnt/c/Users/hs/test/flaskrest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/ProgramData/Oracle/Java/javapath_target_16205437:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Go/bin:/mnt/c/HashiCorp/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Users/hs/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip:/mnt/c/adb:/mnt/c/Users/hs/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/Microsoft VS Code/bin:/snap/bin
+SHELL=/bin/bash
+HOSTTYPE=x86_64
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xa71a30], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xa71a30], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x8b8f40], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x8b8f40], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x8b8f40], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x8b8f40], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x8b8df0], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x8b92c0], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x8b92c0], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [python+0x134a20], sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: [libjvm.so+0x8b92c0], sa_mask[0]=11111111111111111111111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
+
+uname:Linux 4.4.0-17134-Microsoft #285-Microsoft Thu Aug 30 17:31:00 PST 2018 x86_64
+libc:glibc 2.23 NPTL 2.23 
+rlimit: STACK 8192k, CORE infinity, NPROC 7823, NOFILE 65536, AS infinity
+load average:0.52 0.58 0.59
+
+/proc/meminfo:
+MemTotal:        8320080 kB
+MemFree:         3477052 kB
+Buffers:           34032 kB
+Cached:           188576 kB
+SwapCached:            0 kB
+Active:           167556 kB
+Inactive:         157876 kB
+Active(anon):     103104 kB
+Inactive(anon):    17440 kB
+Active(file):      64452 kB
+Inactive(file):   140436 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      14539696 kB
+SwapFree:       14455492 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        102824 kB
+Mapped:            71404 kB
+Shmem:             17720 kB
+Slab:              13868 kB
+SReclaimable:       6744 kB
+SUnreclaim:         7124 kB
+KernelStack:        2848 kB
+PageTables:         2524 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      515524 kB
+Committed_AS:    3450064 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       21296 kB
+VmallocChunk:      66044 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      2048 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       12280 kB
+DirectMap4M:      897024 kB
+
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 23 model 1 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 3 1300X Quad-Core Processor          
+stepping	: 1
+microcode	: 0xffffffff
+cpu MHz		: 3500.000
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 23
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave osxsave avx f16c rdrand
+bogomips	: 7000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 3 1300X Quad-Core Processor          
+stepping	: 1
+microcode	: 0xffffffff
+cpu MHz		: 3500.000
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 23
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave osxsave avx f16c rdrand
+bogomips	: 7000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 3 1300X Quad-Core Processor          
+stepping	: 1
+microcode	: 0xffffffff
+cpu MHz		: 3500.000
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 23
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave osxsave avx f16c rdrand
+bogomips	: 7000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 3 1300X Quad-Core Processor          
+stepping	: 1
+microcode	: 0xffffffff
+cpu MHz		: 3500.000
+cache size	: 512 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 23
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave osxsave avx f16c rdrand
+bogomips	: 7000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 8320080k(3477060k free), swap 14539696k(14455492k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.181-b13) for linux-amd64 JRE (1.8.0_181-8u181-b13-0ubuntu0.16.04.1-b13), built on Jul 30 2018 21:06:27 by "buildd" with gcc 5.4.0 20160609
+
+time: Thu Oct  4 17:58:48 2018
+elapsed time: 4 seconds (0d 0h 0m 4s)
+
